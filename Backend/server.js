@@ -27,7 +27,9 @@ app.use("/api/auth", authRoutes);
 app.use("/api/orders", orderRouter);
 app.use("/api/users", userRoutes);
 
-
+app.get("/", (req, res) => {
+    res.send("API is running...");
+});
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
