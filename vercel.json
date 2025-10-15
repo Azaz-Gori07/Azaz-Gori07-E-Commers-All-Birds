@@ -1,11 +1,11 @@
 {
   "version": 2,
   "builds": [
-    { "src": "Backend/index.js", "use": "@vercel/node" },
+    { "src": "Backend/server.js", "use": "@vercel/node" },
     { "src": "All-Birds-Web/package.json", "use": "@vercel/static-build" }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "Backend/index.js" },
+    { "src": "/api/(.*)", "dest": "Backend/server.js" },
     { "src": "/(.*)", "dest": "All-Birds-Web/build/$1" }
   ]
 }
