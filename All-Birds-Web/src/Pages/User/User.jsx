@@ -45,8 +45,8 @@ function User() {
     try {
       setLoading(true);
       const url = isSignup
-        ? "http://localhost:5000/api/auth/signup"
-        : "http://localhost:5000/api/auth/login";
+        ? "https://azaz-gori07-e-commers-all-birds.onrender.com/auth/signup"
+        : "https://azaz-gori07-e-commers-all-birds.onrender.com/api/auth/login";
 
       const res = await fetch(url, {
         method: "POST",
